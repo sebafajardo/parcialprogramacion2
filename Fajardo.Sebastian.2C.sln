@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlesUsuario", "ControlesUsuario\ControlesUsuario.csproj", "{52D0DE5B-ABFB-404A-B815-0493B4970F57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{1774A535-7945-4E41-A2F6-B629E91FBFF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "ClassLibrary1\Entidades.csproj", "{1774A535-7945-4E41-A2F6-B629E91FBFF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormCantina", "FormCantina\FormCantina.csproj", "{90383F36-AD5F-4C86-8AE6-C8943A40048C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1774A535-7945-4E41-A2F6-B629E91FBFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1774A535-7945-4E41-A2F6-B629E91FBFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1774A535-7945-4E41-A2F6-B629E91FBFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90383F36-AD5F-4C86-8AE6-C8943A40048C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90383F36-AD5F-4C86-8AE6-C8943A40048C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90383F36-AD5F-4C86-8AE6-C8943A40048C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90383F36-AD5F-4C86-8AE6-C8943A40048C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

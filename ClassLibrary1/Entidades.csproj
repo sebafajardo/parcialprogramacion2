@@ -7,8 +7,8 @@
     <ProjectGuid>{1774A535-7945-4E41-A2F6-B629E91FBFF3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,24 +46,7 @@
     <Compile Include="Botella.cs" />
     <Compile Include="Cantina.cs" />
     <Compile Include="Cerveza.cs" />
-    <Compile Include="FrmCantina.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmCantina.Designer.cs">
-      <DependentUpon>FrmCantina.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FrmCantina.resx">
-      <DependentUpon>FrmCantina.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ControlesUsuario\ControlesUsuario.csproj">
-      <Project>{52d0de5b-abfb-404a-b815-0493b4970f57}</Project>
-      <Name>ControlesUsuario</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

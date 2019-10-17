@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Entidades
 {
   public class Cantina
   {
     private List<Botella> botellas;
-    private int espaciosTotales;
-    private Cantina singleton;
+    private static int espaciosTotales;
+    private static Cantina singleton;
 
     public List<Botella> Botellas { get { return botellas; } }
 
@@ -21,10 +21,10 @@ namespace ClassLibrary1
       
     }
 
-    public Cantina GetCantina(int espacios)
+    public static Cantina GetCantina(int espacios)
     {
       if (singleton == null) {
-        // no supe a que se referia con instanciar el objeto
+        singleton = new Cantina(espacios);
       }
 
       if (singleton != null)

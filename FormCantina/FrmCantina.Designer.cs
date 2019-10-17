@@ -1,4 +1,4 @@
-namespace ClassLibrary1
+namespace FrmCantina
 {
   partial class FrmCantina
   {
@@ -30,7 +30,7 @@ namespace ClassLibrary1
     {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.Capacidad = new System.Windows.Forms.NumericUpDown();
             this.cmbBotellaTipo = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -38,9 +38,9 @@ namespace ClassLibrary1
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.Contenido = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.Capacidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Contenido)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,23 +59,23 @@ namespace ClassLibrary1
             this.textBox1.Size = new System.Drawing.Size(143, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // numericUpDown1
+            // Capacidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(149, 245);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.Capacidad.Location = new System.Drawing.Point(149, 245);
+            this.Capacidad.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.Capacidad.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(59, 20);
-            this.numericUpDown1.TabIndex = 2;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.Capacidad.Name = "Capacidad";
+            this.Capacidad.Size = new System.Drawing.Size(59, 20);
+            this.Capacidad.TabIndex = 2;
+            this.Capacidad.Value = new decimal(new int[] {
             1000,
             0,
             0,
@@ -88,6 +88,7 @@ namespace ClassLibrary1
             this.cmbBotellaTipo.Name = "cmbBotellaTipo";
             this.cmbBotellaTipo.Size = new System.Drawing.Size(121, 21);
             this.cmbBotellaTipo.TabIndex = 3;
+            this.cmbBotellaTipo.SelectedIndexChanged += new System.EventHandler(this.cmbBotellaTipo_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -148,23 +149,23 @@ namespace ClassLibrary1
             this.label4.TabIndex = 10;
             this.label4.Text = "Contenido";
             // 
-            // numericUpDown3
+            // Contenido
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(233, 245);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.Contenido.Location = new System.Drawing.Point(233, 245);
+            this.Contenido.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.Contenido.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(59, 20);
-            this.numericUpDown3.TabIndex = 11;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.Contenido.Name = "Contenido";
+            this.Contenido.Size = new System.Drawing.Size(59, 20);
+            this.Contenido.TabIndex = 11;
+            this.Contenido.Value = new decimal(new int[] {
             1000,
             0,
             0,
@@ -175,7 +176,7 @@ namespace ClassLibrary1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 312);
-            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.Contenido);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -183,14 +184,14 @@ namespace ClassLibrary1
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbBotellaTipo);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.Capacidad);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmCantina";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmCantina_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Capacidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Contenido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +201,7 @@ namespace ClassLibrary1
 
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.NumericUpDown numericUpDown1;
+    private System.Windows.Forms.NumericUpDown Capacidad;
     private System.Windows.Forms.ComboBox cmbBotellaTipo;
     private System.Windows.Forms.Button button1;
     private System.Windows.Forms.RadioButton radioButton1;
@@ -208,6 +209,6 @@ namespace ClassLibrary1
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.NumericUpDown numericUpDown3;
+    private System.Windows.Forms.NumericUpDown Contenido;
   }
 }
