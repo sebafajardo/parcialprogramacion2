@@ -15,7 +15,9 @@ namespace FrmCantina
   public partial class FrmCantina : Form
   {
     private Barra barra = new Barra();
-    public FrmCantina()
+    private Botella.Tipo tipo;
+
+        public FrmCantina()
     {
       InitializeComponent();
     }
@@ -23,20 +25,42 @@ namespace FrmCantina
    
     private void button1_Click(object sender, EventArgs e)
     {
-      
-      barra.AgregarBotella(new Botella());
-    }
+            string marca = Marca.Text;
+            int capacidad = Convert.ToInt32(Capacidad.Value);
+            int contenido = Convert.ToInt32(Contenido.Value);
+
+
+            if (radioButtonAgua.Checked)
+            {
+
+                Agua a = new Agua(capacidad, marca, contenido);
+                barra.AgregarBotella(a);
+            }
+
+            if (radioButtonCerveza.Checked)
+            {
+
+                Cerveza c = new Cerveza(capacidad, marca, tipo, contenido);
+                barra.AgregarBotella(c);
+            }
+        }
 
     private void FrmCantina_Load_1(object sender, EventArgs e)
     {
       this.barra.SetCantina = Cantina.GetCantina(10);
       cmbBotellaTipo.DataSource = Enum.GetValues(typeof(Botella.Tipo));
+
     }
 
     private void cmbBotellaTipo_SelectedIndexChanged(object sender, EventArgs e)
     {
-      Botella.Tipo tipo;
       Enum.TryParse<Botella.Tipo>(cmbBotellaTipo.SelectedValue.ToString(), out tipo);
+            
     }
-  }
+
+        private void Marca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

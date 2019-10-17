@@ -1,0 +1,6 @@
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ClassLibrary1\bin\Debug\Entidades.dll
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ClassLibrary1\bin\Debug\Entidades.pdb
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ClassLibrary1\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ClassLibrary1\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ClassLibrary1\obj\Debug\Entidades.dll
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ClassLibrary1\obj\Debug\Entidades.pdb

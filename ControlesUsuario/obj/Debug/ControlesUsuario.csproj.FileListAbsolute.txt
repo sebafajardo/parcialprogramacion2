@@ -10,3 +10,15 @@ D:\Federico\VB .Net\Visual C#\utn\Examenes\20191010-PrimerParcial-2\ControlesUsu
 D:\Federico\VB .Net\Visual C#\utn\Examenes\20191010-PrimerParcial-2\ControlesUsuario\obj\Debug\ControlesUsuario.dll
 D:\Federico\VB .Net\Visual C#\utn\Examenes\20191010-PrimerParcial-2\ControlesUsuario\obj\Debug\ControlesUsuario.pdb
 D:\Federico\VB .Net\Visual C#\utn\Examenes\20191010-PrimerParcial-2\ControlesUsuario\obj\Debug\ControlesUsuario.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\bin\Debug\ControlesUsuario.dll
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\bin\Debug\ControlesUsuario.pdb
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\bin\Debug\Entidades.dll
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\bin\Debug\Entidades.pdb
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlCantina.Barra.resources
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.Properties.Resources.resources
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.csproj.GenerateResource.cache
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.csproj.CopyComplete
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.dll
+C:\Users\Sebastian\Desktop\Programacion\C#\parcialprogramacion2\ControlesUsuario\obj\Debug\ControlesUsuario.pdb

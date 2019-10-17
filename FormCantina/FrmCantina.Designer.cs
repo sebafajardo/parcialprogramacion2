@@ -29,12 +29,12 @@ namespace FrmCantina
     private void InitializeComponent()
     {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Marca = new System.Windows.Forms.TextBox();
             this.Capacidad = new System.Windows.Forms.NumericUpDown();
             this.cmbBotellaTipo = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.buttonAgregar = new System.Windows.Forms.Button();
+            this.radioButtonCerveza = new System.Windows.Forms.RadioButton();
+            this.radioButtonAgua = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,12 +52,13 @@ namespace FrmCantina
             this.label1.TabIndex = 0;
             this.label1.Text = "Marca";
             // 
-            // textBox1
+            // Marca
             // 
-            this.textBox1.Location = new System.Drawing.Point(149, 205);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 1;
+            this.Marca.Location = new System.Drawing.Point(149, 205);
+            this.Marca.Name = "Marca";
+            this.Marca.Size = new System.Drawing.Size(143, 20);
+            this.Marca.TabIndex = 1;
+            this.Marca.TextChanged += new System.EventHandler(this.Marca_TextChanged);
             // 
             // Capacidad
             // 
@@ -90,37 +91,37 @@ namespace FrmCantina
             this.cmbBotellaTipo.TabIndex = 3;
             this.cmbBotellaTipo.SelectedIndexChanged += new System.EventHandler(this.cmbBotellaTipo_SelectedIndexChanged);
             // 
-            // button1
+            // buttonAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(318, 242);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 46);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAgregar.Location = new System.Drawing.Point(318, 242);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(119, 46);
+            this.buttonAgregar.TabIndex = 5;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // radioButton1
+            // radioButtonCerveza
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 209);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Cerveza";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonCerveza.AutoSize = true;
+            this.radioButtonCerveza.Location = new System.Drawing.Point(26, 209);
+            this.radioButtonCerveza.Name = "radioButtonCerveza";
+            this.radioButtonCerveza.Size = new System.Drawing.Size(64, 17);
+            this.radioButtonCerveza.TabIndex = 6;
+            this.radioButtonCerveza.TabStop = true;
+            this.radioButtonCerveza.Text = "Cerveza";
+            this.radioButtonCerveza.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonAgua
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(26, 248);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(50, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Agua";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonAgua.AutoSize = true;
+            this.radioButtonAgua.Location = new System.Drawing.Point(26, 248);
+            this.radioButtonAgua.Name = "radioButtonAgua";
+            this.radioButtonAgua.Size = new System.Drawing.Size(50, 17);
+            this.radioButtonAgua.TabIndex = 7;
+            this.radioButtonAgua.TabStop = true;
+            this.radioButtonAgua.Text = "Agua";
+            this.radioButtonAgua.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -180,12 +181,12 @@ namespace FrmCantina
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.radioButtonAgua);
+            this.Controls.Add(this.radioButtonCerveza);
+            this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.cmbBotellaTipo);
             this.Controls.Add(this.Capacidad);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Marca);
             this.Controls.Add(this.label1);
             this.Name = "FrmCantina";
             this.Text = "Form1";
@@ -200,12 +201,12 @@ namespace FrmCantina
     #endregion
 
     private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox Marca;
     private System.Windows.Forms.NumericUpDown Capacidad;
     private System.Windows.Forms.ComboBox cmbBotellaTipo;
-    private System.Windows.Forms.Button button1;
-    private System.Windows.Forms.RadioButton radioButton1;
-    private System.Windows.Forms.RadioButton radioButton2;
+    private System.Windows.Forms.Button buttonAgregar;
+    private System.Windows.Forms.RadioButton radioButtonCerveza;
+    private System.Windows.Forms.RadioButton radioButtonAgua;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Label label4;

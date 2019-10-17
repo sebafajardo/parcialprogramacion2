@@ -92,7 +92,15 @@ namespace ControlCantina
             pb.Location = new System.Drawing.Point(125, 125);
 
             int cantidadServida = botella.ServirMedida();
-            MessageBox.Show(string.Format("SIRVIENDO! {1}ml\n{0}", botella.ToString(), cantidadServida), "Cantinero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            if (cantidadServida == 0)
+            {
+                StringBuilder sb = new StringBuilder();
+                MessageBox.Show(sb.Append("No queda mas liquido!").ToString());
+            }
+            else
+                MessageBox.Show(string.Format("SIRVIENDO! {1}ml\n{0}", botella.ToString(), cantidadServida), "Cantinero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
 
             pb.Location = ubicacion;
         }
