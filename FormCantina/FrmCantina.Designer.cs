@@ -28,6 +28,7 @@ namespace FrmCantina
     /// </summary>
     private void InitializeComponent()
     {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCantina));
             this.label1 = new System.Windows.Forms.Label();
             this.Marca = new System.Windows.Forms.TextBox();
             this.Capacidad = new System.Windows.Forms.NumericUpDown();
@@ -39,6 +40,7 @@ namespace FrmCantina
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Contenido = new System.Windows.Forms.NumericUpDown();
+            this.barra1 = new ControlCantina.Barra();
             ((System.ComponentModel.ISupportInitialize)(this.Capacidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Contenido)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +48,7 @@ namespace FrmCantina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(146, 189);
+            this.label1.Location = new System.Drawing.Point(147, 379);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +56,7 @@ namespace FrmCantina
             // 
             // Marca
             // 
-            this.Marca.Location = new System.Drawing.Point(149, 205);
+            this.Marca.Location = new System.Drawing.Point(150, 395);
             this.Marca.Name = "Marca";
             this.Marca.Size = new System.Drawing.Size(143, 20);
             this.Marca.TabIndex = 1;
@@ -62,7 +64,7 @@ namespace FrmCantina
             // 
             // Capacidad
             // 
-            this.Capacidad.Location = new System.Drawing.Point(149, 245);
+            this.Capacidad.Location = new System.Drawing.Point(150, 435);
             this.Capacidad.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -85,7 +87,7 @@ namespace FrmCantina
             // cmbBotellaTipo
             // 
             this.cmbBotellaTipo.FormattingEnabled = true;
-            this.cmbBotellaTipo.Location = new System.Drawing.Point(316, 205);
+            this.cmbBotellaTipo.Location = new System.Drawing.Point(362, 394);
             this.cmbBotellaTipo.Name = "cmbBotellaTipo";
             this.cmbBotellaTipo.Size = new System.Drawing.Size(121, 21);
             this.cmbBotellaTipo.TabIndex = 3;
@@ -93,7 +95,7 @@ namespace FrmCantina
             // 
             // buttonAgregar
             // 
-            this.buttonAgregar.Location = new System.Drawing.Point(318, 242);
+            this.buttonAgregar.Location = new System.Drawing.Point(364, 421);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(119, 46);
             this.buttonAgregar.TabIndex = 5;
@@ -104,7 +106,7 @@ namespace FrmCantina
             // radioButtonCerveza
             // 
             this.radioButtonCerveza.AutoSize = true;
-            this.radioButtonCerveza.Location = new System.Drawing.Point(26, 209);
+            this.radioButtonCerveza.Location = new System.Drawing.Point(27, 399);
             this.radioButtonCerveza.Name = "radioButtonCerveza";
             this.radioButtonCerveza.Size = new System.Drawing.Size(64, 17);
             this.radioButtonCerveza.TabIndex = 6;
@@ -115,7 +117,7 @@ namespace FrmCantina
             // radioButtonAgua
             // 
             this.radioButtonAgua.AutoSize = true;
-            this.radioButtonAgua.Location = new System.Drawing.Point(26, 248);
+            this.radioButtonAgua.Location = new System.Drawing.Point(27, 438);
             this.radioButtonAgua.Name = "radioButtonAgua";
             this.radioButtonAgua.Size = new System.Drawing.Size(50, 17);
             this.radioButtonAgua.TabIndex = 7;
@@ -126,7 +128,7 @@ namespace FrmCantina
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(315, 189);
+            this.label2.Location = new System.Drawing.Point(359, 379);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 8;
@@ -135,7 +137,7 @@ namespace FrmCantina
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(146, 229);
+            this.label3.Location = new System.Drawing.Point(147, 419);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 9;
@@ -144,7 +146,7 @@ namespace FrmCantina
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(232, 229);
+            this.label4.Location = new System.Drawing.Point(233, 419);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 10;
@@ -152,7 +154,7 @@ namespace FrmCantina
             // 
             // Contenido
             // 
-            this.Contenido.Location = new System.Drawing.Point(233, 245);
+            this.Contenido.Location = new System.Drawing.Point(234, 435);
             this.Contenido.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -172,11 +174,20 @@ namespace FrmCantina
             0,
             0});
             // 
+            // barra1
+            // 
+            this.barra1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("barra1.BackgroundImage")));
+            this.barra1.Location = new System.Drawing.Point(12, 8);
+            this.barra1.Name = "barra1";
+            this.barra1.Size = new System.Drawing.Size(551, 368);
+            this.barra1.TabIndex = 12;
+            // 
             // FrmCantina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 312);
+            this.ClientSize = new System.Drawing.Size(578, 497);
+            this.Controls.Add(this.barra1);
             this.Controls.Add(this.Contenido);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -211,5 +222,6 @@ namespace FrmCantina
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.NumericUpDown Contenido;
+    private ControlCantina.Barra barra1;
   }
 }

@@ -15,7 +15,7 @@ namespace Entidades
 
     }
 
-    protected string GenerarInforme() {
+    protected override string GenerarInforme() {
       StringBuilder sb = new StringBuilder();
       sb.AppendFormat("{0}, {1}, {2} } ", capacidadML, contenidoML, marca);
 

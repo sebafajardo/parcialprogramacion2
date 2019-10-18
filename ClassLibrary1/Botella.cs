@@ -29,7 +29,7 @@ namespace Entidades
       }
     }
 
-    protected string GenerarInforme()
+    protected virtual string GenerarInforme()
     {
       StringBuilder sb = new StringBuilder();
       sb.AppendFormat("{0}, {1}, {2}, {3} } ", capacidadML, contenidoML, marca);

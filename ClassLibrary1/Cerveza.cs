@@ -8,7 +8,7 @@ namespace Entidades
 {
   public class Cerveza : Botella
   {
-    private int MEDIDA;
+    private const int MEDIDA = 330;
     private Tipo tipo;
 
     public Cerveza(int capacidadML, string marca, int contenidoML) : base(marca, capacidadML, contenidoML)
@@ -21,7 +21,7 @@ namespace Entidades
       this.tipo = tipo;
     }
 
-    protected string GenerarInforme()
+    protected override string GenerarInforme()
     {
       StringBuilder sb = new StringBuilder();
       sb.AppendFormat("{0}, {1}, {2}, {3}, {4} } ", capacidadML, contenidoML, marca, tipo);
